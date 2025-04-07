@@ -8,7 +8,7 @@ import re
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])  # Set in Streamlit Secrets
 
 # Initialize the model
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel('gemini-1.5-pro-latest')  # Updated model name
 
 def analyze_with_gemini(resume_text: str, jd_text: str):
     prompt = f"""
